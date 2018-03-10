@@ -1,0 +1,298 @@
+%   DOCUMENT CLASS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Use the `sfuthesis` class to format your thesis. If your program does not
+%   require a thesis defence, use the class option `undefended` like so:
+%
+%     \documentclass[undefended]{sfuthesis}
+%
+%   To generate a signature page for your defence, use the `sfuapproval` class
+%   instead, by replacing the below line with
+%
+%     \documentclass{sfuapproval}
+%
+%   For more information about thesis formatting requirements, go to
+%
+%     http://www.lib.sfu.ca/help/publish/thesis
+%
+%   or ask a thesis advisor at the SFU Research Commons.
+%
+
+\documentclass{sfuthesis}
+
+
+
+%   DOCUMENT METADATA  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Fill in the following information for the title page and approval page.
+%
+
+\title{A Report on the Intersection of Long-Term Autonomy and Human-Robot Interaction Research}
+\thesistype{Depth Report}
+\author{Jack Thomas}
+\previousdegrees{%
+	M.Math, University of Waterloo, 2014\\
+	B.A., University of New Brunswick, 2012\\
+	B.CS., University of New Brunswick, 2012}
+\degree{Doctor of Philosophy}
+\discipline{Computer Science}
+\department{Department of Computing Science}
+\faculty{Faculty of Applied Science}
+\copyrightyear{2018}
+\semester{Spring 2018}
+\date{TBD, 2018}
+
+\keywords{robotics; human-robot interaction; long-term autonomy}
+
+\committee{%
+%	\chair{Pamela Isely}{Professor}
+%	\member{Emmett Brown}{Senior Supervisor\\Professor}
+%	\member{Bonnibel Bubblegum}{Supervisor\\Associate P%rofessor}
+%	\member{James Moriarty}{Supervisor\\Adjunct Professor}
+%	\member{Kaylee Frye}{Internal Examiner\\Assistant Professor\\School of Engineering Science}
+%	\member{Hubert J.\ Farnsworth}{External Examiner\\Professor\\Department of Quantum Fields\\Mars University}
+}
+
+
+
+%   PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Add any packages you need for your thesis here.
+%   You don't need to call the following packages, which are already called in
+%   the sfuthesis class file:
+%
+%   - appendix
+%   - etoolbox
+%   - fontenc
+%   - geometry
+%   - lmodern
+%   - nowidow
+%   - setspace
+%   - tocloft
+%
+%   If you call one of the above packages (or one of their dependencies) with
+%   options, you may get a "Option clash" LaTeX error. If you get this error,
+%   you can fix it by removing your copy of \usepackage and passing the options
+%   you need by adding
+%
+%       \PassOptionsToPackage{<options>}{<package>}
+%
+%   before \documentclass{sfuthesis}.
+%
+%   The following packages are a few suggestions you might find useful.
+%
+%   (1) amsmath and amssymb are essential if you have math in your thesis;
+%       they provide useful commands like ``blackboard bold'' symbols and
+%       environments for aligning equations.
+%   (2) amsthm includes allows you to easily change the style and numbering of
+%       theorems. It also provides an environment for proofs.
+%   (3) graphicx allows you to add images with \includegraphics{filename}.
+%   (4) hyperref turns your citations and cross-references into clickable
+%       links, and adds metadata to the compiled PDF.
+%   (5) pdfpages lets you import pages of external PDFs using the command
+%       \includepdf{filename}. You will need to do this if your research
+%       requires an Ethics Statement.
+%
+
+\usepackage{amsmath}                            % (1)
+\usepackage{amssymb}                            % (1)
+\usepackage{amsthm}                             % (2)
+\usepackage{graphicx}                           % (3)
+\usepackage[pdfborder={0 0 0}]{hyperref}        % (4)
+% \usepackage{pdfpages}                         % (5)
+% ...
+% ...
+% ...
+% ... add your own packages here!
+
+
+
+
+%   OTHER CUSTOMIZATIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Add any packages you need for your thesis here. We've started you off with
+%   a few suggestions.
+%
+%   (1) Use a single word space between sentences. If you disable this, you
+%       will have to manually control spacing around abbreviations.
+%   (2) Correct the capitalization of "Chapter" and "Section" if you use the
+%       \autoref macro from the `hyperref` package.
+%   (3) The LaTeX thesis template defaults to one-and-a-half line spacing. If
+%       your supervisor prefers double-spacing, you can redefine the
+%       \defaultspacing command.
+%
+
+\frenchspacing                                    % (1)
+\renewcommand*{\chapterautorefname}{Chapter}      % (2)
+\renewcommand*{\sectionautorefname}{Section}      % (2)
+\renewcommand*{\subsectionautorefname}{Section}   % (2)
+% \renewcommand{\defaultspacing}{\doublespacing}  % (3)
+% ...
+% ...
+% ...
+% ... add your own customizations here!
+
+
+
+
+%   FRONTMATTER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Title page, committee page, copyright declaration, abstract,
+%   dedication, acknowledgements, table of contents, etc.
+%
+%   If your research requires an Ethics Statement, download one from the
+%   SFU library website and uncomment the appropriate lines below.
+%
+
+\begin{document}
+
+\frontmatter
+\maketitle{}
+\makecommittee{}
+
+%\addtoToC{Ethics Statement}%
+%\includepdf[pagecommand={\thispagestyle{plain}}]{ethicsstatement.pdf}%
+%\clearpage
+
+\begin{abstract}
+The abstract should introduce that human-robot interaction and long-term autonomy have an area of overlap of growing importance, as robots both become more self-sufficient and push deeper into human environments like workplaces and public spaces. It should preview that we will look for relevant work from both sides, particularly any that addresses issues specific to this intersection, without jumping to any of our conclusions about the problem as a whole.
+\end{abstract}
+
+
+%\begin{dedication}
+%	This is an optional page.
+%\end{dedication}
+
+
+%\begin{acknowledgements}
+%	This is an optional page.
+%\end{acknowledgements}
+
+\addtoToC{Table of Contents}%
+\tableofcontents%
+\clearpage
+
+\addtoToC{List of Tables}%
+\listoftables%
+\clearpage
+
+\addtoToC{List of Figures}%
+\listoffigures%
+\clearpage
+
+
+
+
+
+%   MAIN MATTER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Start writing your thesis --- or start \include ing chapters --- here.
+%
+
+\mainmatter%
+
+\chapter{Introduction}
+
+The introduction will expand on the abstract by going into more detail about the definitions of human-robot interaction and autonomy/LTA, as well as discussing some of the specific examples of robots and situations where their intersection is relevant (autonomous taxis, warehouse robots, domestic robots, getting onto public transit or even through a door). It should be short, saving the heavy lifting of scoping and justifying the problem for the next chapter and may involve no or few references of its own, except possibly to provide some key definitions or a few touchstone authors/papers to help the reader get their bearing.
+
+(A note on the structure of this outline, while chapters and sections have been proposed and brief summaries of their purposes included, subsections and the full list of papers meant for each section have not. Some paper suggestions to help anchor each proposed section will be appended to each.)
+
+\chapter{Background}
+
+I'm not completely sold on the title, but I haven't thought of a better one yet. I am still developing the idea for this section, and in the end it might even make more sense to put it after the other two, but basically I would like somewhere to discuss a little more history, theory and even philosophy concerning the issues of robot autonomy in relation to humans. The introduction obviously touches on the growing industrial applications, but before we get into the specifics of navigation and user studies I'm hoping we might be abl to do a little stage-setting. I know this is still pretty vague so I'll work on this more in future iterations, but if you can't go deep in a "depth report", when can you?
+
+
+-The STRANDS project (likely to reappear later in LTA)
+
+-Possibly some supporting references on robots entering the workplace, like Amazon's warehouses, autonomous 
+
+-Whoever originally said robots were for "dull, dirty or dangerous" work
+
+-braitenberg 's Vehicles (maybe a cheeky reference but I'm sure I can find some relevance about the blurry line between a simple machine and an autonomous agent)
+-How to make robots that make firends and influence people (that particular argument about cultivating in humans the belief that the robot has intentions)
+-Autonomous Agents: From Biological Inspiration to Implementation and Control (for a fairly uncontroversial definition of robot autonomy)
+-Pfeifer, Building Fungus Eaters
+-Maybe Smithers' robot autonomy definitoon/overview (warning, it treads on Varela)
+
+\chapter{Autonomy}
+
+Having scoped and grounded our area of interest in the previous chapter, this chapter gets down to brass tacks on research done to expand robots' autonomy.
+
+\section{Long-Term Autonomy}
+
+This section should demonstrate some of the breadth of issues in LTA research, such as scheduling, power management, dealing with failures, etc. The end of this section should highlight the importance of navigation to almost every project.
+
+\section{Navigation}
+
+This is not the only section in which robot navigation is discussed, but should be the one explaining the core concept apart from when humans are involved. The references here should explain how autonomous navigation is a fundamental, perhaps even defining part of being an autonomous robot, and has therefore been a central focus of robotics research for decades. Papers that focus on navigation by lone robots or by fully-controlled multi-robot systems are appropriate, as are ones about navigation algorithms, ideally examples that do not consider other robots or humans or else treat them as dynamic obstacles instead of interacting agents.
+
+The terminal references of this section will be a discussion of Reciprocal Velocity Obstacles and some of the research related to that, as well as crowd modelling from the likes of Dinesh Manocha. These provide a natural segue to the start of the next chapter by highlighting work that addresses the reciprocal and cooperative elements of navigation.
+
+-Shaky
+-Dynamic Window Algorithm
+-Reciprocal Velocity Obstacles
+-Dinesh's Crowd Modelling
+
+
+
+\chapter{Human-Robot Interaction}
+
+This chapter will explore human-robot interaction starting from the lead given at the end of the last chapter on navigation. The goal is not to survey all of human-robot interaction but to follow a thread outward from navigation toward what features make for a more successful social human interaction.
+
+To bridge from one chapter to the other, I'll include references for navigation involving biological inspiration (ants, herding, flocking, aggression, all sounds pretty familiar), many of which may use biology as a guide but do not actually use the behaviour to interact with the original species. These references should set up the idea that human-inspired does not necessarily equal human-compliant.
+
+
+\section{Human-Compliant Navigation
+
+Compliance literature seems relatively recent and deals in proxemics This is also an opportunity to discuss the machine-learning angle of many of these systems, which are trained on either simulation or real-world data. This will help us later create a juxtaposition between continuous-space, implicit, learned social interactions and discrete, explicit, designed social behaviours.
+
+-What was that one collision avoidance behaviour paper from IROS 2017?
+-Stanford's Jackrabbot (several papers)
+-Burgard's social compliance reinforcement learning
+
+\section{Social HRI}
+
+This section widens the scope of our HRI interest beyond navigation to any paper where the robot is engaged in a social interaction with a human. This can still be a wide area, so apart from some major papers and a survey or two, papers that focus on explicit one-on-one interactions are to be favored. The section should hopefully suggest that human acceptance is an important factor to successful social interactions, and raise questions about what characteristics promote cooperation from users.
+
+
+\section{Human Factors}
+
+This section widens the discussion again to human factor research on robot acceptance and perception by humans, looking at issues like trust, novelty, anthropomorphism, cultural differences and anything else that might explain why people may or may not choose to cooperate with a robot.
+
+A subsection on HCI and interface design is warranted to discuss relevant research outside of robotics. This provides a way to include the audio references and any other literature on workplaces that don't specifically address robots. 
+
+
+-Perhaps the one about how to handle receiving too many navigation waypoints to visit by too many human users, as an example of a robot making their own decisions about which humans to obey (and implicitly that humans would have to accept their judgement on the matter)
+-The study about the robot guiding a crowd to a fire escape when a seemingly more direct route is available.
+-Anqi Xu's work on trust (particularly recognizing trust being lost and trying to signal that they've learned their lesson and would like trust back)
+-The earcon paper about the cola factory split between two people
+
+
+
+\chapter{Conclusion}
+
+The conclusion should go beyond a dry summary of the areas the depth report has covered. While the second chapter worked to justify our interest in the intersection of the following two chapters, it will be necessary to revisit that justification at the end now that the reader has hopefully absorbed enough material to be persuaded of it. By leveraging what human interaction research has learned about the requirements for gaining human, we can again argue that the goals of long-term autonomy in human environments (particularly concerning navigation) will require explicit, intentional design of recognition- and reciprocation-inducing behaviours.
+
+It is also partly the purpose of a depth report to point the way toward the eventual thesis. In this case, the depth report will hopefully have suggested that there is a rich vein to be mined figuring out how to promote recognition, reciprocation, and ultimately acceptance from human users for robots' social agency in order to enable their navigational autonomy as part of achieving Long Term Autonomy.
+
+
+%   BACK MATTER  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   References and appendices. Appendices come after the bibliography and
+%   should be in the order that they are referred to in the text.
+%
+%   If you include figures, etc. in an appendix, be sure to use
+%
+%       \caption[]{...}
+%
+%   to make sure they are not listed in the List of Figures.
+%
+
+\backmatter%
+	\addtoToC{Bibliography}
+	\bibliographystyle{plain}
+	\bibliography{references}
+
+\begin{appendices} % optional
+	\chapter{Code}
+\end{appendices}
+\end{document}
