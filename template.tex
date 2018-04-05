@@ -194,6 +194,8 @@ The abstract should introduce that human-robot interaction and long-term autonom
 
 The introduction will expand on the abstract by going into more detail about the definitions of human-robot interaction and autonomy/LTA, as well as discussing some of the specific examples of robots and situations where their intersection is relevant (autonomous taxis, warehouse robots, domestic robots, getting onto public transit or even through a door). It should be short, saving the heavy lifting for the next section and may involve no or few references of its own, except possibly to provide some key definitions or a few touchstone authors/papers to help the reader get their bearing.
 
+3 entries
+
 Three Engineers, Hundreds of Robots, One Warehouse (Kiva 2008 example)
 https://spectrum.ieee.org/robotics/robotics-software/three-engineers-hundreds-of-robots-one-warehouse
 
@@ -208,11 +210,9 @@ After the intro's high-level overview, this section of the Introduction goes int
 -The STRANDS project (likely to reappear later in LTA)
 -Possibly some supporting references on robots entering the workplace, like Amazon's warehouses, autonomous 
 -Whoever originally said robots were for "dull, dirty or dangerous" work
--braitenberg 's Vehicles (maybe a cheeky reference but I'm sure I can find some relevance about the blurry line between a simple machine and an autonomous agent)
--How to make robots that make friends and influence people (that particular argument about cultivating in humans the belief that the robot has intentions)
--Autonomous Agents: From Biological Inspiration to Implementation and Control (for a fairly uncontroversial definition of robot autonomy)
--Pfeifer, Building Fungus Eaters
--Tim Smithers
+
+
+12 entries
 
 Building "Fungus Eaters": Design Principles of Autonomous Agents	Rolf Pfeifer's work about what it takes to be autonomous. Good starting point to build toward what it takes to be autonomous among people.
 
@@ -242,19 +242,29 @@ When are robots intelligent autonomous agents?
 
 Having scoped and grounded our area of interest in the previous chapter, this chapter gets down to brass tacks on research done to expand robots' autonomy.
 
-A fast and frugal method for team-task allocation in a multi-robot transportation system
 
 Speaking Swarmish: Human-Robot Interface Design for Large Swarms of Autonomous Mobile Robots
 
 Designing interfaces for multi-user, multi-robot systems	Design principle study for mixed human-robot teams, useful when discussing autonomy	
 
-Probabilistic robotics?
+Probabilistic robotics
+
+Autonomous Agents: From Biological Inspiration to Implementation and Control 
+
+
+Shakey the Robot	It's Shakey! Just a good part of robotic history, important to reference while giving background
+
 
 (More Swarm, Multi-robot system, autonomous robotics research in high level and general)
 
 \section{Long-Term Autonomy}
 
 This section should demonstrate some of the breadth of issues in LTA research, such as scheduling, power management, dealing with failures, etc. The end of this section should highlight the importance of navigation to almost every project.
+
+
+
+
+((longitudinal studies))
 
 Robots in the Wild: Understanding long-term use	Longitudinal study of 30 households with Roombas, answering question of whether people keep using them when novelty wears off. Novelty wearing off is a big concern for long-term autonomy	
 
@@ -264,27 +274,53 @@ How Robot Products become Social Products: An Ethnographic study of cleaning in 
 
 Service Robots in the Domestic Environment: A Study of the Roomba Vacuum in the Home	It's about the Roomba! It's obviously relevant! Ethnography on how users long-term get along with service robots in the home.	
 
-Life-Long Learning of daily Human Routine in Home Environments	Applying learning and adaptation to human behaviour, a good example of a long-term project adapting itself.
-
-The Snackbot: Documenting the design of a robot for long-term human-robot interaction	LONG-TERM HRI! Not multi-robot and maybe a little bare-bones, but here's a good example!
-
-Autonomous door opening and plugging in with a personal robot	Combines door navigation with recharging task, which ties the activities together into LTA
-
-Behaviors for Robust Door Opening and Doorway Traversal with a Force-Sensing Mobile Manipulator		Pure doorway navigation
-
-Staying Alive Longer: Autonomous Robot Charging Put To The Test
-
 The mobot museum robot installations: a five year experiment
 
 Experiences with an Autonomous Robot Attending AAAI
 
-Autonomous door opening and plugging in with a personal robot
+Lessons learned from robotic vacuum cleaners entering the home ecosystem
+
+((recharging))
+
+Autonomous door opening and plugging in with a personal robot	Combines door navigation with recharging task, which ties the activities together into LTA
+
+Staying Alive Longer: Autonomous Robot Charging Put To The Test
 
 Basic cycles, utility and opportunism in self-sufficient robots
 
 Competitive Foraging, Decision Making, and the Ecological Rationality of the Matching Law
 
-Lessons learned from robotic vacuum cleaners entering the home ecosystem
+
+((task allocation))
+
+**Dynamic Task assignment in robot swarms
+
+**Fair subdivision of multi-robot tasks
+
+**a formal analysis of task allocation
+
+**multi-robot task allocation in uncertain conditions
+
+**simple auction for task allocation
+
+A fast and frugal method for team-task allocation in a multi-robot transportation system
+
+
+
+
+
+
+Life-Long Learning of daily Human Routine in Home Environments	Applying learning and adaptation to human behaviour, a good example of a long-term project adapting itself.
+
+The Snackbot: Documenting the design of a robot for long-term human-robot interaction	LONG-TERM HRI! Not multi-robot and maybe a little bare-bones, but here's a good example!
+
+
+
+
+
+
+
+
 
 \section{Navigation}
 
@@ -292,12 +328,9 @@ This is not the only section in which robot navigation is discussed, but should 
 
 The terminal references of this section will be a discussion of Reciprocal Velocity Obstacles and some of the research related to that, as well as crowd modelling from the likes of Dinesh Manocha. These provide a natural segue to the start of the next chapter by highlighting work that addresses the reciprocal and cooperative elements of navigation.
 
--Shaky
--Dynamic Window Algorithm
--Reciprocal Velocity Obstacles
--Dinesh's Crowd Modelling
 
-Shakey the Robot	It's Shakey! Just a good part of robotic history, important to reference while giving background
+
+\subsection{Navigation Algorithms}
 
 The Dynamic Window Approach to Collision Avoidance	That classic paper from the directed reading, influential on robot navigation for problems like getting through a door.	
 
@@ -305,7 +338,34 @@ Reciprocal velocity obstacles for real-time multi-agent navigation
 
 Bravo: Biased reciprocal velocity obstacles break symmetry in dense robot populations
 
+Behaviors for Robust Door Opening and Doorway Traversal with a Force-Sensing Mobile Manipulator		Pure doorway navigation
+
+\subsection{Biological Inspiration}
+
+PLEdestrians: A Least-Effort Approach to Crowd Simulation
+
+Directing Crowd Simulations Using Navigation Fields
+
+**A navigation approach for robots in crowded urban areas
+
+Dynamic path planning adopting human navigation strategies for a domestic mobile robot
+
+\subsection(Formations, Flocks and Swarms}
+
 Reducing spatial interference in robot teams by local-investment aggression
+
+Flocks, herds and schools: A distributed behavioral model
+
+Self-organized flocking in mobile robot swarms
+
+A Decentralized Approach to Formation Maneuvers
+
+
+
+
+
+
+
 
 \chapter{Human-Robot Interaction}
 
@@ -313,11 +373,12 @@ This chapter will explore human-robot interaction starting from the lead given a
 
 To bridge from one chapter to the other, I'll include references for navigation involving biological inspiration (ants, herding, flocking, aggression, all sounds pretty familiar), many of which may use biology as a guide but do not actually use the behaviour to interact with the original species. These references should set up the idea that human-inspired does not necessarily equal human-compliant.
 
-Timing in Multimodal turn-taking Interactions: Control and Analysis using Timed Petri Nets	HRI case dealing with turn-taking interaction styles.
 
-Reasoning for a multi-modal service robot considering uncertainty in human-robot interactions	POMDPs, remember them from 
 
-Joelle? A reasoning system to fill the gap between sensors/actuators and POMDPs, multi-modal fusion
+
+?Timing in Multimodal turn-taking Interactions: Control and Analysis using Timed Petri Nets	HRI case dealing with turn-taking interaction styles.
+
+Reasoning for a multi-modal service robot considering uncertainty in human-robot interactions	POMDPs, remember them from Joelle? A reasoning system to fill the gap between sensors/actuators and POMDPs, multi-modal fusion
 
 Survey of metrics for human-robot interaction	Thank goodness, a survey of dozens of methods to measure human-robot interaction.
 
@@ -328,61 +389,48 @@ Using Motives and Artificial Emotion for Long-Term Activity of an Autonomous Rob
 
 Compliance literature seems relatively recent and deals in proxemics This is also an opportunity to discuss the machine-learning angle of many of these systems, which are trained on either simulation or real-world data. This will help us later create a juxtaposition between continuous-space, implicit, learned social interactions and discrete, explicit, designed social behaviours.
 
--What was that one collision avoidance behaviour paper from IROS 2017?
--Stanford's Jackrabbot (several papers)
--Burgard's social compliance reinforcement learning
 
 Human-Aware Navigation: A Survey	Similar to that social robotics paper, a survey and classification of this type of project
 
+
+
+((Proxemics))
+
 Evaluation of Passing Distance for Social Robots	Another proxemic user study, interesting finding that too much lateral distance is also weird besides too little	
 
+Toward Understanding Social Cues and Signals in Human-Robot Interaction: Effects of Robot Gaze and Proxemic Behaviour	Corridor passing, proxemic was influential while gaze was not, multiple interactions were more effective	
 
-Towards more efficient navigation for robots and humans	Almost exactly what we're talking about, a user study, social cues to signal, passing, although through corridors	
+Human-Robot Proxemics: Physical and psychological distancing in human-robot interaction	Adapting social norms to maintaining distance between social interlocuters.
 
-Making a case for spatial prompting in Human-Robot Communication	Talks about how people configure their relative position to the robot based on situation, and how to nonverbally prompt them to take up a certain position	
+
+((Learning from the real world))
 
 Socially compliant mobile robot navigation via inverse reinforcement learning
+
+Socially Aware Motion Planning with Deep Reinforcement Learning
+
+Socially Adaptive Path Planning in Human Environments Using Inverse Reinforcement Learning	From the NCFRN field trials, great example of developing human-conscious technique rather than max-efficiency path.	
+
+**Learning social ettiquette human trajectory understanding
+
+**social lstm human trajectory prediction
+
+((Models))
 
 A Predictive Collision Avoidance Model for Pedestrian Simulation
 
 Towards a socially acceptable collision avoidance for a mobile robot navigating among pedestrians using a pedestrian model
 
-Toward Understanding Social Cues and Signals in Human-Robot Interaction: Effects of Robot Gaze and Proxemic Behaviour	Corridor passing, proxemic was influential while gaze was not, multiple interactions were more effective	
-
- Human-friendly robot navigation in dynamic environments 
-
 Local reactive robot navigation: A comparison between reciprocal velocity obstacle variants and human-like behavior 
-
-Viewing Robot Navigation in Human Environments as a Cooperative behaviour
-
-Socially Aware Motion Planning with Deep Reinforcement Learning
-
-Dynamic path planning adopting human navigation strategies for a domestic mobile robot
-
-Natural person-following behaviour for social robots	Looking at how people handle having a robot following them around.	
-
-Human-Robot Proxemics: Physical and psychological distancing in human-robot interaction	Adapting social norms to maintaining distance between social interlocuters.
-
-Walking Together: Side by Side Walking Model for an Interacting Robot	Study and theory about walking next to someone that goes beyond "maintain distance". Predicts, obstacle avoids.
-
-Directly or on detours?: how should industrial robots approximate humans?	Study where workplace robots either went straight to work or wandered around. Surprise, people don't like the wandering around!	
-
-Socially Adaptive Path Planning in Human Environments Using Inverse Reinforcement Learning	From the NCFRN field trials, great example of developing human-conscious technique rather than max-efficiency path.	
-
-Socially-Driven Collective Path-Planning for Robot Missions	Concept of fairness used to decide which waypoints to visit when multiple humans have each designated stops but there's too many
 
 Social Forces Model for Pedestrian Dynamics
 
-Robot Navigation in Dense Human Crowds: the Case for Cooperation
 
-Friendly Patrolling: A Model of Natural Encounters	A study on how to make robot behaviour approacheable and inviting, useful in the workplace	2011
+((Social Factors of Navigation))	
+
+Viewing Robot Navigation in Human Environments as a Cooperative behaviour
 
 Understanding suitable locations for waiting	Long-running systems will have to handle staying out of the way quite often, so an example system that looks for places to wait is smart.	
-
-Designing interruptive behaviours of a public environmental monitoring robot	Interesting
- case, where the robot needs to be assertive in a way that will get humans to listen to its instructions.	
-
-Autonomous Pedestrian-like navigation in city centers	A good HRI bend to this particular talk, since long-term autonomy means blending in with crowds.	
 
 How to Approach Humans? Strategies for Social Robots to Initiate Interactions	Describes the challenges of getting a walking person's attention as a robot and details how they achieved it. Useful for long-term systems.	
 
@@ -392,148 +440,211 @@ Perception of Affect Elicited by Robot Motion	Suggests acceleration and curvatur
 
 An Analysis of Deceptive Robot Motion	The reasons for and means of generating deceptive robot motion. Useful in study of disagreeing robots	2014
 
-Exploring Interruption in HRI using Wizard of Oz	Not sure of significance of work, but topic of exploring when to interrupt humans as a robot is relevant.	
-
 Nonverbal leakage in robots: communication of intentions through seemingly unintentional behaviour	Useful to establish that not all of our communication is deliberate or conscious, and robots need to participate in these nonverbal cues to be understood	
 
 Nonverbal robot-group interaction using an imitated gaze cut	Signalling a delivery to an unsuspecting recipient
+
+Making a case for spatial prompting in Human-Robot Communication	Talks about how people configure their relative position to the robot based on situation, and how to nonverbally prompt them to take up a certain position	
+
+
+
+
+Towards more efficient navigation for robots and humans	Almost exactly what we're talking about, a user study, social cues to signal, passing, although through corridors	
+
+ Human-friendly robot navigation in dynamic environments 
+
+
+
+Natural person-following behaviour for social robots	Looking at how people handle having a robot following them around.	
+
+Walking Together: Side by Side Walking Model for an Interacting Robot	Study and theory about walking next to someone that goes beyond "maintain distance". Predicts, obstacle avoids.
+
+Directly or on detours?: how should industrial robots approximate humans?	Study where workplace robots either went straight to work or wandered around. Surprise, people don't like the wandering around!	
+
+Robot Navigation in Dense Human Crowds: the Case for Cooperation
+
+Friendly Patrolling: A Model of Natural Encounters	A study on how to make robot behaviour approacheable and inviting, useful in the workplace	2011
+
+
 
 
 \section{Social HRI}
 
 This section widens the scope of our HRI interest beyond navigation to any paper where the robot is engaged in a social interaction with a human. This can still be a wide area, so apart from some major papers and a survey or two, papers that focus on explicit one-on-one interactions are to be favored. The section should hopefully suggest that human acceptance is an important factor to successful social interactions, and raise questions about what characteristics promote cooperation from users.
 
-Spotting social interaction by using the robot energy consumption
-
-Trust-Driven Interactive Visual Navigation for Autonomous Robots	Early trust-work, modelling robot's estimation of current trust and modifying autonomy level in response.
-
-OPTIMo: Online Probabilistic Trust Inference Model for Asymmetric Human-Robot Collaborations	An ongoing trust model. 
-
-Personalizes to different users, Bayesian techniques employed. "Near-real-time"?
-
-Exploring socially intelligent recharge behaviour for human-robot interaction	Since recharging is something robots are going to have to do, studying how to manage people's social reaction to it is useful.
-
-Managing social constraints on recharge behaviour for robot companions using memory	The learning technique to figure out when's a good time to recharge isn't that interesting, but the idea of picking the right time to recharge is.
-
-
 Social Robots for Long-Term Interaction: A Survey Basically a mandatory survey to reference the breadth of the research area the depth report covers (at least, from 2013) Note: Two more similarly named HRI surveys, but from 2003 and 2007, so pretty out of date
 
-Personalization in HRI: A Longitudinal Field Experiment	Long-term study on the relevance of building a rapport with humans and personalizing the robot's interactions to match their 'relationship'. Autonomy relevance!
-
-Social vs. Useful HRI: Experiencing the Familiar, Perceiving the Robot as a Sociable Partner and Responding to Its Actions
-
 Social interactions in HRI: the robot view (Breazeal)
-
-Socially Aware Motion Planning with Deep Reinforcement Learning 
-
-A social robot that stands in line
-
-Robots asking for directions - The Willingnesss of passers-by to support robots	A useful study to make the point about autonomy, and the importance of getting people to recognize robots if you want them to cooperate
-
-Socially Distributed Perception	Integrating asking for help into a robot's problem-solving process
-
-Toward sociable robots
-
-Designing robots for long-term social interaction
 
 Kismet
 
 ?From Hal to Kismet: Your Evolution Dollars at Work? (Critic of Kismet,Breazeal and Brooks)
 
+((Trust))
+
+Trust-Driven Interactive Visual Navigation for Autonomous Robots	Early trust-work, modelling robot's estimation of current trust and modifying autonomy level in response.
+
+OPTIMo: Online Probabilistic Trust Inference Model for Asymmetric Human-Robot Collaborations	An ongoing trust model. Personalizes to different users, Bayesian techniques employed. "Near-real-time"?
+
+((Social aspects of power/recharge))
+
+Spotting social interaction by using the robot energy consumption
+
+Exploring socially intelligent recharge behaviour for human-robot interaction	Since recharging is something robots are going to have to do, studying how to manage people's social reaction to it is useful.
+
+Managing social constraints on recharge behaviour for robot companions using memory	The learning technique to figure out when's a good time to recharge isn't that interesting, but the idea of picking the right time to recharge is.
+
+((Asking for help/Humans supporting robots))
+
+Robots asking for directions - The Willingnesss of passers-by to support robots	A useful study to make the point about autonomy, and the importance of getting people to recognize robots if you want them to cooperate
+
+Socially Distributed Perception	Integrating asking for help into a robot's problem-solving process
+
+((Integrating Robots into Human Society)
+
+A social robot that stands in line
+
+Toward sociable robots
+
+Designing robots for long-term social interaction
+
+Personalization in HRI: A Longitudinal Field Experiment	Long-term study on the relevance of building a rapport with humans and personalizing the robot's interactions to match their 'relationship'. Autonomy relevance!
+
+Social vs. Useful HRI: Experiencing the Familiar, Perceiving the Robot as a Sociable Partner and Responding to Its Actions
+
+
+
+
+
+
+
 Human-Robot Teams Collaborating Socially, Organizationally and Culturally	Interesting idea about three levels of customs for autonomous robots to identify and modify behaviour around.	
 
-Sorry Dave, I'm Afraid I Can't Do That: Explaining Unachievable Robot Tasks Using Natural Language	Example of robots having to disagree/decline user instructions as impossible using natural language	2013
+Taking candy from a robot: Speed features and candy accessibility predict human response
+
+
+
+
 
 \section{Human Factors}
 
 This section widens the discussion again to human factor research on robot acceptance and perception by humans, looking at issues like trust, novelty, anthropomorphism, cultural differences and anything else that might explain why people may or may not choose to cooperate with a robot.
 
-A subsection on HCI and interface design is warranted to discuss relevant research outside of robotics. This provides a way to include the audio references and any other literature on workplaces that don't specifically address robots. 
 
 
--Perhaps the one about how to handle receiving too many navigation waypoints to visit by too many human users, as an example of a robot making their own decisions about which humans to obey (and implicitly that humans would have to accept their judgement on the matter)
 -The study about the robot guiding a crowd to a fire escape when a seemingly more direct route is available.
 -Anqi Xu's work on trust (particularly recognizing trust being lost and trying to signal that they've learned their lesson and would like trust back)
--The earcon paper about the cola factory split between two people
-
-Taking candy from a robot: Speed features and candy accessibility predict human response
-
-
-"Daisy, Daisy, give me your answer do!" Switching off a robot	People recognize "Animancy" of robot, might be relevant to philosophical argument about recognition of robot being tied to autonomy	
-
-Decision-Making Authority, Team Efficiency and Human Worker Satisfaction in Mixed Human-Robot Teams	Interesting work where humans are willing to give up scheduling autonomy if robot does it more efficiently	2014
-
-Effects of framing a robot as a social agent or as a machine on children's social behavior
-
-Evidence that Robots Trigger a Cheating Detector in Humans	They really narrow down on cheating to win (as opposed to other cheating or just the motion involved in cheating) makes an agent seem more autonomous.	
-
-Critic, compatriot or chump? Response to robot blame attribution	Not a surprising result, NOBODY likes getting blamed, but notable since autonomy means being able to stand up to yourself in human interactions	
 
 Towards Industrial Robots with Human-like Moral Responsibilities	Proposing moral safeguards in the workplace that go beyond safety procedures. Concept of a robot that can be responsible is relevant to autonomy.	
 
-Robots that express emotion elicit better human teaching	Useful to prove the value of social interaction and cultivating emotional bonds with humans	
+\subsection{Asserting, Disagreeing and Refusing}
 
-Do people hold a humanoid robot morally accountable for the harm it causes?	Robot held more accountable than vending 
+Socially-Driven Collective Path-Planning for Robot Missions	Concept of fairness used to decide which waypoints to visit when multiple humans have each designated stops but there's too many
 
-machine, less than human. So there are grades of autonomy we recognize (sheepdog example)	
+When the robot criticizes you…: Self-serving bias in human-robot interaction	Another reminder that if you don't respect the robot's autonomy you won't respect negative feedback	
 
-When the robot criticizes you…: Self-serving bias in human-robot interaction	Another reminder that if you don't respect 
-
-the robot's autonomy you won't respect negative feedback	
-
-Effects of speech on perceived capability	Just a little study that shows robots that are conversational and responsive seem more capable than ones that don't communicate. Even when the communication is irrelevant, just being engaged increases people's perception of the robot.	
-
-On the Effect of the user's background on communicating grasping commands	Difference between technical and non-technical users and how they communicate with robots.
-
-Beyond Dirty, Dangerous and Dull: What Everyday People Think Robots Should Do	Good for backing up some assertion about peoples' expectations of robots in the workplace	
-
+Evidence that Robots Trigger a Cheating Detector in Humans	They really narrow down on cheating to win (as opposed to other cheating or just the motion involved in cheating) makes an agent seem more autonomous.	
 
 Eyewitnesses are misled by human but not robot interviewers	Large number of respondents were shown a video then questioned by either a human or a robot who tried to mislead them about it. Robot did worse.	
 
-Rabble of Robots Effects: Number and Type of Robots Modulates Attitudes, Emotions, and Stereotypes	Might be more useful as a psychological study example, but they do have a point that groups of robots won't be treated the same as individuals. Did they explore heterogeneous groups?	
+Decision-Making Authority, Team Efficiency and Human Worker Satisfaction in Mixed Human-Robot Teams	Interesting work where humans are willing to give up scheduling autonomy if robot does it more efficiently	2014
 
-The Advisor Robot: Tracing People's Mental Model From a Robot's Physical Attributes	A study with four different robot head and different voices to examine impact on humans, design principles, "uncanny valley" possibly?	
+Sorry Dave, I'm Afraid I Can't Do That: Explaining Unachievable Robot Tasks Using Natural Language	Example of robots having to disagree/decline user instructions as impossible using natural language	2013
 
-Affective Expression in Appearance-constrained Robots	2-pager, non-anthropomorphic robots can still express themselves
+Critic, compatriot or chump? Response to robot blame attribution	Not a surprising result, NOBODY likes getting blamed, but notable since autonomy means being able to stand up to yourself in human interactions
 
-Judging a Bot By Its Cover: An Experiment on Expectation Setting for Personal Robots	A simple reference for how end users don't have the same appreciation for a robot's capabilities as we might, and how important it is to manage expectations	
-
-A peer pressure experiment: Recreation of the Asch conformity experiment with robots
-
-When in Rome: the role of culture & context in adherence to robot recommendations
-
-Which Robot Am I Thinking About?: The Impact of Action and Appearance on People's Evaluations of a Moral Robot	
-
-The influence of people’s culture and prior experiences with Aibo on their attitude towards robots
-
-Backchannel opportunity prediction for social robot listeners
-
-Cultural differences in attitudes towards robots
-
-Three's company, or a crowd?: The effects of robot number and behavior on HRI in Japan and the USA	Underlining different reactions to groups vs. individuals and social vs. functional robots	2015
-
-How a robot should give advice	Advice given as friendly suggestion more effective than given as orders. Case for robotic politeness, courtesy	
-
-\section{Interfaces}
-
-Earcons and icons: Their structure and common design principles
-
-Comparing Heads-up, Heands-Free Operation of ground robots to teleoperation
-
-A detailed investigation into the effectiveness of earcons
+How a robot should give advice	Advice given as friendly suggestion more effective than given as orders. Case for robotic politeness, courtesy
 
 The effects of interruptions on task performance, annoyance, and anxiety in the user interface
 
-Using Vision, Acoustic and Natural language for Disambiguation	Multimodal! Use multiple input streams to resolve ambiguities in one stream.
+Exploring Interruption in HRI using Wizard of Oz	Not sure of significance of work, but topic of exploring when to interrupt humans as a robot is relevant.	
+
+Designing interruptive behaviours of a public environmental monitoring robot	Interesting
+ case, where the robot needs to be assertive in a way that will get humans to listen to its instructions.	
+
+\subsection{Influence of Perception}
+
+Robots that express emotion elicit better human teaching	Useful to prove the value of social interaction and cultivating emotional bonds with humans	
+
+Effects of speech on perceived capability	Just a little study that shows robots that are conversational and responsive seem more capable than ones that don't communicate. Even when the communication is irrelevant, just being engaged increases people's perception of the robot.	
+
+Beyond Dirty, Dangerous and Dull: What Everyday People Think Robots Should Do	Good for backing up some assertion about peoples' expectations of robots in the workplace	
+
+"Daisy, Daisy, give me your answer do!" Switching off a robot	People recognize "Animancy" of robot, might be relevant to philosophical argument about recognition of robot being tied to autonomy	
+
+Effects of framing a robot as a social agent or as a machine on children's social behavior
+
+A peer pressure experiment: Recreation of the Asch conformity experiment with robots
+
+Backchannel opportunity prediction for social robot listeners
+
+\subsection{Significance of Appearance}
+
+Rabble of Robots Effects: Number and Type of Robots Modulates Attitudes, Emotions, and Stereotypes	Might be more useful as a psychological study example, but they do have a point that groups of robots won't be treated the same as individuals. Did they explore heterogeneous groups?	
+
+Three's company, or a crowd?: The effects of robot number and behavior on HRI in Japan and the USA	Underlining different reactions to groups vs. individuals and social vs. functional robots	2015
+
+Judging a Bot By Its Cover: An Experiment on Expectation Setting for Personal Robots	A simple reference for how end users don't have the same appreciation for a robot's capabilities as we might, and how important it is to manage expectations	
+
+Which Robot Am I Thinking About?: The Impact of Action and Appearance on People's Evaluations of a Moral Robot	
+
+Do people hold a humanoid robot morally accountable for the harm it causes?	Robot held more accountable than vending machine, less than human. So there are grades of autonomy we recognize (sheepdog example)
+
+Affective Expression in Appearance-constrained Robots	2-pager, non-anthropomorphic robots can still express themselves
+
+The Advisor Robot: Tracing People's Mental Model From a Robot's Physical Attributes	A study with four different robot head and different voices to examine impact on humans, design principles, "uncanny valley" possibly?	
+
+\subsection{Influence of Culture}
+
+On the Effect of the user's background on communicating grasping commands	Difference between technical and non-technical users and how they communicate with robots.
+
+When in Rome: the role of culture & context in adherence to robot recommendations
+
+The influence of people’s culture and prior experiences with Aibo on their attitude towards robots
+
+Cultural differences in attitudes towards robots
+
+
+
+
+\section{Interfaces}
+
+
+
+
+\subsection{Audio}
+
+Earcons and icons: Their structure and common design principles
+
+A detailed investigation into the effectiveness of earcons
 
 Chorusing and Controlled Clustering for Minimal Mobile Agents	Using audio chirps to regulate a swarm's cluster size.	
-
 
 Listening to vs overhearing robots in a hotel public space	OVERHEARING! Two robots talking to each other who say things people might want to know!	
 
 Effective Sounds in Complex Systems: The Arkola Situation   A signature HCI audio paper from the Earcon line, used in the audio project, good example of an hci paper with findings useful to HRI.
 
+Using Vision, Acoustic and Natural language for Disambiguation	Multimodal! Use multiple input streams to resolve ambiguities in one stream.
+
+
+
+
+
+
+Comparing Heads-up, Heands-Free Operation of ground robots to teleoperation
+
+**a study on the social acceptance of robots in a multi-human interaction
+
+**do you want your autonomous car to drive like you
+
+**expressing emotion through colour sound and vibration
+
+**why do they refuse to use my robot
+
 The Roomba mood ring: An ambient display robot	An oddity, people vote on what colour the robot displays as a way to gauge the current emotional tenor of the room.
+
+
+
 
 \chapter{Conclusion}
 
